@@ -1,0 +1,31 @@
+name: Publicar release
+
+# When a data PR is merged, make its draft Release public so the app can download the files.
+# Uses only the built-in GITHUB_TOKEN: this repository holds no secrets.
+on:
+  push:
+    branches: [main]
+    paths: [manifest.json]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish the release named in manifest.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag=$(jq -r .release_tag manifest.json)
+          expected=$(jq -r '[.full.url, .icms_states.url, (.diffs[].url)] | map(split("/")[-1]) | sort | .[]' manifest.json)
+          actual=$(gh release view "$tag" --json assets --jq '.assets[].name' | sort)
+          if [ "$expected" != "$actual" ]; then
+            echo "::error::release $tag assets don't match manifest.json"
+            printf 'expected:\n%s\nactual:\n%s\n' "$expected" "$actual"
+            exit 1
+          fi
+          gh release edit "$tag" --draft=false --latest
