@@ -1,0 +1,933 @@
+{
+  "schema_version": 3,
+  "checked_on": "2026-10-31",
+  "sources": {
+    "simtax-med-2025": {
+      "title": "SimTax - Alíquotas de ICMS para Medicamentos por Estado em 2025",
+      "url": "https://simtax.com.br/?p=56709",
+      "published": "2025-06-23"
+    },
+    "simtax-geral-2026": {
+      "title": "SimTax - Tabela ICMS 2026: alíquotas internas de todos os estados",
+      "url": "https://simtax.com.br/tabela-icms-2026-aliquotas-de-todos-estados-atualizada/",
+      "published": "2026-04-24"
+    },
+    "ncm-brasil-2026": {
+      "title": "NCM Brasil - Tabela de ICMS 2026, alíquotas por estado",
+      "url": "https://www.ncmbrasil.com.br/icms",
+      "published": "2026-08-22"
+    },
+    "guia-farmacia-2023": {
+      "title": "Guia da Farmácia - Entenda as alíquotas do ICMS nas operações com medicamentos",
+      "url": "https://guiadafarmacia.com.br/exclusivo-entenda-as-aliquotas-do-icms-nas-operacoes-com-medicamentos/",
+      "published": "2023-10-16"
+    },
+    "comsefaz-rts-2025": {
+      "title": "COMSEFAZ - Alíquota de ICMS sobre importações pelo RTS (Convênio ICMS 81/2023)",
+      "url": "https://comsefaz.org.br/novo/wp-content/uploads/2025/12/Aliquota-ICMS-import.-RTS-por-UF-17-e-20-CV81-23-v22-12-2025.pdf",
+      "published": "2025-12-22"
+    }
+  },
+  "states": {
+    "AC": {
+      "name": "Acre",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 19,
+          "rules": []
+        }
+      ],
+      "notes": "Guia da Farmácia 2023 cita 17% para paracetamol e dipirona; regra por produto ainda não modelada.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 19
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 19,
+          "note": "FCP até 2%, desde 01/01/2020"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 19,
+          "note": "17% para paracetamol e dipirona"
+        }
+      ]
+    },
+    "AL": {
+      "name": "Alagoas",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 19,
+          "rules": []
+        },
+        {
+          "from": "2026-04-01",
+          "default": 20.5,
+          "rules": [],
+          "legal_source": "Lei nº 9.776/2025 (AL)"
+        }
+      ],
+      "notes": "19% até 31/03/2026; 20,5% a partir de 01/04/2026 (Lei 9.776/2025).",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19,
+          "note": "tabela de jun/2025, antes da mudança"
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 21.5,
+          "note": "20,5% + 1% FECOEP; medicamentos ficam em 20,5%"
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20.5,
+          "note": "FCP até 1%, desde 01/04/2026"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 19
+        }
+      ]
+    },
+    "AM": {
+      "name": "Amazonas",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 20,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%, desde 01/04/2020"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 20
+        }
+      ]
+    },
+    "AP": {
+      "name": "Amapá",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 18,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 18
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 18
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 18,
+          "note": "sem FCP, desde 01/01/2016"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 18
+        }
+      ]
+    },
+    "BA": {
+      "name": "Bahia",
+      "status": "verified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": "2024-02-07",
+          "default": 20.5,
+          "rules": [],
+          "legal_source": "Lei nº 14.629/2023 (BA), alíquota geral"
+        }
+      ],
+      "notes": "Questão aberta: o adicional de 2% do FECP (Lei 7.014/96, art. 16-A) incide sobre medicamentos?",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20.5
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20.5
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20.5,
+          "note": "FCP até 2%, desde 07/02/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 19,
+          "note": "antes da Lei 14.629/2023"
+        }
+      ]
+    },
+    "CE": {
+      "name": "Ceará",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 20,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%, desde 01/01/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 18,
+          "note": "antes de 2024"
+        }
+      ]
+    },
+    "DF": {
+      "name": "Distrito Federal",
+      "status": "unverified",
+      "confidence": "check",
+      "periods": [
+        {
+          "from": null,
+          "default": 17,
+          "rules": [],
+          "alternatives": [
+            20
+          ]
+        }
+      ],
+      "notes": "Medicamentos 17% (SimTax 2025, Guia 2023) ou alíquota geral de 20%.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 17
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20,
+          "note": "alíquota geral"
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "sem FCP, desde 22/01/2023"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17
+        }
+      ]
+    },
+    "ES": {
+      "name": "Espírito Santo",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 17,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 17
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 17
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 17,
+          "note": "FCP até 2%, desde 01/01/2016"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17
+        }
+      ]
+    },
+    "GO": {
+      "name": "Goiás",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 19,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 19
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 19,
+          "note": "FCP até 2%, desde 01/04/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17,
+          "note": "antes de 2024"
+        }
+      ]
+    },
+    "MA": {
+      "name": "Maranhão",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 23,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 23
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 23
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 23,
+          "note": "FCP até 2%, desde 19/02/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 20,
+          "note": "antes de 2024"
+        }
+      ]
+    },
+    "MG": {
+      "name": "Minas Gerais",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 18,
+          "rules": [
+            {
+              "tipo": "Genérico",
+              "rate": 12
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 18,
+          "note": "genéricos 12%"
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 18,
+          "note": "subitem 7.1, Parte 1, Anexo I, RICMS/MG"
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 18,
+          "note": "FCP até 2%, desde 01/01/2016"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 18,
+          "note": "genéricos 12%; 7% para soluções parenterais vendidas pela indústria"
+        }
+      ]
+    },
+    "MS": {
+      "name": "Mato Grosso do Sul",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 17,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 17
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 17
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 17,
+          "note": "FCP até 2%, desde 01/01/2016"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17
+        }
+      ]
+    },
+    "MT": {
+      "name": "Mato Grosso",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 17,
+          "rules": []
+        }
+      ],
+      "notes": "Guia da Farmácia 2023 cita 7% para paracetamol; regra por produto ainda não modelada.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 17
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 17
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 17,
+          "note": "FCP até 2%, desde 01/01/2020"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17,
+          "note": "7% para paracetamol"
+        }
+      ]
+    },
+    "PA": {
+      "name": "Pará",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 19,
+          "rules": []
+        }
+      ],
+      "notes": "Fontes divergem sobre a data de início dos 19% (16/03/2024 ou 01/01/2026); a alíquota atual é 19% em ambas.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 19
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 19,
+          "note": "FCP até 2%, desde 16/03/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 19
+        },
+        {
+          "id": "comsefaz-rts-2025",
+          "rate": 19,
+          "note": "nota: alíquota modal de 19% desde 01/01/2026, Decreto 4.829/2025"
+        }
+      ]
+    },
+    "PB": {
+      "name": "Paraíba",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 20,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%, desde 01/01/2023"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 18
+        }
+      ]
+    },
+    "PE": {
+      "name": "Pernambuco",
+      "status": "unverified",
+      "confidence": "check",
+      "periods": [
+        {
+          "from": null,
+          "default": 20.5,
+          "rules": []
+        }
+      ],
+      "notes": "Verificar regimes especiais; os 3%/6% do Guia 2023 são para distribuidores, não para o varejo.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20.5
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20.5
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20.5,
+          "note": "FCP até 2%, desde 01/01/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 18,
+          "note": "antes de 2024; 3% ou 6% para distribuidores credenciados (Decreto 28.247/2005)"
+        }
+      ]
+    },
+    "PI": {
+      "name": "Piauí",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 22.5,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 22.5
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 22.5
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 22.5,
+          "note": "FCP até 2%, desde 01/04/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 21,
+          "note": "antes de 2024"
+        }
+      ]
+    },
+    "PR": {
+      "name": "Paraná",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 19.5,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19.5
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 19.5
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 19.5,
+          "note": "FCP até 2%, desde 13/03/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 19,
+          "note": "antes de 2024"
+        }
+      ]
+    },
+    "RJ": {
+      "name": "Rio de Janeiro",
+      "status": "unverified",
+      "confidence": "check",
+      "periods": [
+        {
+          "from": null,
+          "default": 22,
+          "rules": [],
+          "alternatives": [
+            20
+          ]
+        }
+      ],
+      "notes": "22% = 20% + 2% do FECP. Confirmar se o FECP incide sobre medicamentos.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 22,
+          "note": "20% + 2% FECP"
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 22,
+          "note": "20% + 2% FECP (art. 14, I, Lei 2.657/96; LC 210/2023)"
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%; carga usual 22%, desde 20/03/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 20,
+          "note": "mais 2% de FECP"
+        }
+      ]
+    },
+    "RN": {
+      "name": "Rio Grande do Norte",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 20,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%, desde 01/01/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 20
+        }
+      ]
+    },
+    "RO": {
+      "name": "Rondônia",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 19.5,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19.5
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 19.5
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 19.5,
+          "note": "FCP até 2%, desde 12/01/2022"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17.5
+        }
+      ]
+    },
+    "RR": {
+      "name": "Roraima",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 20,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%, desde 01/04/2021"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 20
+        }
+      ]
+    },
+    "RS": {
+      "name": "Rio Grande do Sul",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 17,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 17
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 17
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 17,
+          "note": "FCP até 2%, desde 01/01/2024"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17
+        }
+      ]
+    },
+    "SC": {
+      "name": "Santa Catarina",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 17,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 17
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 17
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 17,
+          "note": "sem FCP, desde 01/01/2016"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 17,
+          "note": "12% em operações entre contribuintes"
+        }
+      ]
+    },
+    "SE": {
+      "name": "Sergipe",
+      "status": "unverified",
+      "confidence": "check",
+      "periods": [
+        {
+          "from": null,
+          "default": 19,
+          "rules": [],
+          "alternatives": [
+            20
+          ]
+        }
+      ],
+      "notes": "19% ou 20% conforme o adicional de 1% do fundo de pobreza incida ou não sobre medicamentos.",
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 19
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20,
+          "note": "19% + 1% FECOEP"
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 19,
+          "note": "FCP até 1%; carga usual 20%, desde 01/01/2022"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 19
+        }
+      ]
+    },
+    "SP": {
+      "name": "São Paulo",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 18,
+          "rules": [
+            {
+              "tipo": "Genérico",
+              "rate": 12
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 18,
+          "note": "genéricos 12%"
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 18,
+          "note": "art. 52, I, RICMS/SP; cita 12% para genéricos"
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 18,
+          "note": "sem FCP, desde 15/01/2021"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 18,
+          "note": "genéricos 12%; 12% para soluções parenterais"
+        }
+      ]
+    },
+    "TO": {
+      "name": "Tocantins",
+      "status": "unverified",
+      "confidence": "likely",
+      "periods": [
+        {
+          "from": null,
+          "default": 20,
+          "rules": []
+        }
+      ],
+      "sources": [
+        {
+          "id": "simtax-med-2025",
+          "rate": 20
+        },
+        {
+          "id": "simtax-geral-2026",
+          "rate": 20
+        },
+        {
+          "id": "ncm-brasil-2026",
+          "rate": 20,
+          "note": "FCP até 2%, desde 01/01/2020"
+        },
+        {
+          "id": "guia-farmacia-2023",
+          "rate": 20
+        }
+      ]
+    }
+  }
+}
