@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "key_id": "ed25519-4800bac27c6bf907",
   "data_month": "2026-10",
   "published_date": "2026-10-09",
@@ -10,17 +10,25 @@
     "sha256": "d36148255b4529241b564c6df2e1fdd40e4f37d1d75806bc9a0f1f767aa12019",
     "page": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos"
   },
-  "release_tag": "data-2026-10-d3614825",
+  "release_tag": "data-2026-10-724612f7",
   "full": {
-    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-10-d3614825/generico-2026-10.sqlite.gz",
-    "size": 4323662,
-    "sha256": "89392231daea7ca70544d048f7239a4942f0c7084123e8c507c34702a799b1a6",
-    "uncompressed_size": 16359424,
-    "uncompressed_sha256": "1bf36c5b6a2fbbe271734cdfcfe324e7aefd79c4d6849d92dcb67a4d7ea80700"
+    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-10-724612f7/generico-2026-10.sqlite.gz",
+    "size": 4327216,
+    "sha256": "b91156bb24d334f896f0b8c88a313148e8cb4ac4a8062effa4b1e1ca9cc160c8",
+    "uncompressed_size": 16371712,
+    "uncompressed_sha256": "f53d106a9893af748f01c26e718aed255d2a3397208d1438fd75207227314a26",
+    "content_sha256": "50c78820bc044f7cc8d193ef3d92b9e3955b6bf842c7dbb9131181068f49fb3b"
   },
-  "diffs": [],
+  "diffs": [
+    {
+      "base_content_sha256": "984b3b5ca8a5d8e432a1117ad3d1e332ed290c97a469733d5bf10714b945931a",
+      "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-10-724612f7/diff-2026-10-724612f7.json.gz",
+      "size": 23948,
+      "sha256": "e903b52243ade5e61f92362e661586157ef7774eff0a15225a223891cb4597ad"
+    }
+  ],
   "icms_states": {
-    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-10-d3614825/icms_states.json",
+    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-10-724612f7/icms_states.json",
     "size": 20901,
     "sha256": "3cf87ffdc24d0926079d77809d7dcdc93a2d6798417c763ef435ff9faeb11b31"
   }
