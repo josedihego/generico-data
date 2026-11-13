@@ -6,29 +6,29 @@
   "db_schema_version": 1,
   "source": {
     "name": "CMED/Anvisa - Lista de preços de medicamentos (PMC)",
-    "file": "lista_pmc_20261109_111901660.xlsx",
-    "sha256": "090ed6f3e7c035fa37e6db01c72945ea5fa9763055bb040dcf75f98735727216",
+    "file": "lista_pmc_20261109_111901662.xlsx",
+    "sha256": "de540611c5806d7a54f26c2b553b774d2b72ded5ad17491c3aeaaa3de1b45fb9",
     "page": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos"
   },
-  "release_tag": "data-2026-11-9840b4af",
+  "release_tag": "data-2026-11-f9984c02",
   "full": {
-    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-11-9840b4af/generico-2026-11.sqlite.gz",
-    "size": 4332362,
-    "sha256": "f0f13f3835f6c6b1b7598b859f9da645b8850ad3ad88adc349793d7ad20a4992",
+    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-11-f9984c02/generico-2026-11.sqlite.gz",
+    "size": 4332366,
+    "sha256": "75c1ecaa76b4a72ac35875449ceee66744bdea515e1a0d6cdb1c9bdfba969af3",
     "uncompressed_size": 16420864,
-    "uncompressed_sha256": "2f144085763023d75ed6954edc250eef998b5e3a7709fc5737d941c2eca43a0e",
-    "content_sha256": "83ce1899f2b2716a28037bd0567df1ab5d927211d4c8ee6ef84edfb95c99fa8c"
+    "uncompressed_sha256": "35d46119f53bd5b95a03771ac0f916fc681a64be695ae54cda2b5126938ed19d",
+    "content_sha256": "ef60b9beb4c443d20b0b54a56e405d4fbba444963a1786b464a3f86c3ed8f038"
   },
   "diffs": [
     {
-      "base_content_sha256": "50c78820bc044f7cc8d193ef3d92b9e3955b6bf842c7dbb9131181068f49fb3b",
-      "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-11-9840b4af/diff-2026-11-9840b4af.json.gz",
-      "size": 26954,
-      "sha256": "1f0101b356351f5672d668e80ad2b6a8010ba67ded2bdaa6687928465e424e81"
+      "base_content_sha256": "83ce1899f2b2716a28037bd0567df1ab5d927211d4c8ee6ef84edfb95c99fa8c",
+      "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-11-f9984c02/diff-2026-11-f9984c02.json.gz",
+      "size": 575,
+      "sha256": "d1b3478b558ec7e1126f789bb5e3df850b6a50646402de1f64dddb0d724cedd2"
     }
   ],
   "icms_states": {
-    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-11-9840b4af/icms_states.json",
+    "url": "https://github.com/josedihego/generico-data/releases/download/data-2026-11-f9984c02/icms_states.json",
     "size": 20901,
     "sha256": "3cf87ffdc24d0926079d77809d7dcdc93a2d6798417c763ef435ff9faeb11b31"
   }
