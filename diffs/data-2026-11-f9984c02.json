@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "schema_version": 1,
+  "base_content_sha256": "83ce1899f2b2716a28037bd0567df1ab5d927211d4c8ee6ef84edfb95c99fa8c",
+  "target_content_sha256": "ef60b9beb4c443d20b0b54a56e405d4fbba444963a1786b464a3f86c3ed8f038",
+  "counts": {"ean": 27859, "grp": 5253, "meta": 12, "pmc": 295165, "product": 26694},
+  "tables": {
+    "meta": {
+      "columns": ["key", "value"],
+      "upsert": [
+        ["content_sha256", "ef60b9beb4c443d20b0b54a56e405d4fbba444963a1786b464a3f86c3ed8f038"],
+        ["source_file", "lista_pmc_20261109_111901662.xlsx"],
+        ["source_sha256", "de540611c5806d7a54f26c2b553b774d2b72ded5ad17491c3aeaaa3de1b45fb9"]
+      ],
+      "delete": []
+    },
+    "grp": {
+      "columns": ["id", "substance_key", "strength", "form"],
+      "upsert": [],
+      "delete": []
+    },
+    "product": {
+      "columns": ["id", "ggrem", "registration", "name", "substance", "substance_key", "lab", "presentation", "strength", "form", "pack_qty", "pack_unit", "group_id", "product_type", "price_regime", "tarja", "hospital_only", "icms_exempt", "marketed", "in_options", "fp_status"],
+      "upsert": [],
+      "delete": []
+    },
+    "ean": {
+      "columns": ["ean", "product_id"],
+      "upsert": [],
+      "delete": []
+    },
+    "pmc": {
+      "columns": ["product_id", "rate_bp", "cents"],
+      "upsert": [],
+      "delete": []
+    }
+  }
+}
